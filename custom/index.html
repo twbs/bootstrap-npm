@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="custom.css">
+  </head>
+  <body class="p-5">
+    <h2 class="pb-2 mb-3 border-bottom">Custom CSS with Bootstrap</h2>
+    <p>This demonstrates building a custom CSS file with Bootstrap's source Sass files, managed via npm. It's not a complete solution, and skips compiling Bootstrap's JavaScript.</p>
+    <p><strong>This demo includes:</strong></p>
+    <ul>
+      <li><code class="text-danger">index.html</code> &mdash; the page you're looking at.</li>
+      <li><code class="text-danger">custom.scss</code> &mdash; a customized version of <code>bootstrap.scss</code> where we normally import every Sass file.</li>
+    </ul>
+    <p>The normal import stack is commented out, save for a handful of components:</p>
+    <ul>
+      <li><code class="text-danger">functions</code>, <code class="text-danger">variables</code>, and <code class="text-danger">mixins</code> &mdash; useful tools for interacting with and customizing Bootstrap's default styles.</li>
+      <li><code class="text-danger">reboot</code> &mdash; our opinionated browser normalization styles.</li>
+      <li><code class="text-danger">type</code> &mdash; our default typography styles.</li>
+      <li><code class="text-danger">utilities</code> &mdash; all our utility classes for quick prototyping.</li>
+    </ul>
+    <p>You can <strong>compile this CSS</strong> with <code class="text-danger">npm run custom</code>.</p>
+  </body>
+</html>
