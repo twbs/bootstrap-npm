@@ -4,6 +4,7 @@
   "description": "Example project for including Bootstrap via npm and customizing it.",
   "style": "style.css",
   "sass": "style.scss",
+  "main": "index.js",
   "scripts": {
     "start": "npm run css && npm run custom && open default/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
