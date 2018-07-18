@@ -4,7 +4,9 @@ Demonstrates how to include, customize, and compile Bootstrap's CSS via npm.
 
 ## Usage
 
-Download or clone the project, then from the directory root:
+This project requires the installation of Node.js. [Download and install it here.](https://nodejs.org/en/download/)
+
+With Node.js installed, download or clone this project. Then, from the directory root:
 
 ```bash
 npm install
