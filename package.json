@@ -1,15 +1,12 @@
 {
   "name": "bootstrap-npm",
   "version": "1.1.0",
-  "description": "Example project for including Bootstrap via npm and customizing it.",
-  "style": "style.css",
-  "sass": "style.scss",
-  "main": "index.js",
+  "description": "Example project for including and customizing Bootstrap's Sass and CSS via npm.",
+  "style": "bootstrap-custom.css",
+  "sass": "bootstrap-custom.scss",
   "scripts": {
-    "start": "npm run css && npm run custom && open default/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 default/default.scss default/default.css",
-    "custom": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 custom/custom.scss custom/custom.css"
+    "start": "npm run sass -- -w",
+    "sass": "node-sass --output-style compressed bootstrap-custom.scss bootstrap-custom.css"
   },
   "author": "mdo",
   "license": "MIT",
