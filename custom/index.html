@@ -2,21 +2,46 @@
   <head>
     <link rel="stylesheet" href="custom.css">
   </head>
-  <body class="p-5">
-    <h2 class="pb-2 mb-3 border-bottom">Custom CSS with Bootstrap</h2>
-    <p>This demonstrates building a custom CSS file with Bootstrap's source Sass files, managed via npm. It's not a complete solution, and skips compiling Bootstrap's JavaScript.</p>
-    <p><strong>This demo includes:</strong></p>
-    <ul>
-      <li><code class="text-danger">index.html</code> &mdash; the page you're looking at.</li>
-      <li><code class="text-danger">custom.scss</code> &mdash; a customized version of <code>bootstrap.scss</code> where we normally import every Sass file.</li>
-    </ul>
-    <p>The normal import stack is commented out, save for a handful of components:</p>
-    <ul>
-      <li><code class="text-danger">functions</code>, <code class="text-danger">variables</code>, and <code class="text-danger">mixins</code> &mdash; useful tools for interacting with and customizing Bootstrap's default styles.</li>
-      <li><code class="text-danger">reboot</code> &mdash; our opinionated browser normalization styles.</li>
-      <li><code class="text-danger">type</code> &mdash; our default typography styles.</li>
-      <li><code class="text-danger">utilities</code> &mdash; all our utility classes for quick prototyping.</li>
-    </ul>
-    <p>You can <strong>compile this CSS</strong> with <code class="text-danger">npm run custom</code>.</p>
+  <body>
+    <div class="p-3 p-md-5 text-white bg-primary">
+      <div class="col-md-7 mx-auto py-md-5">
+        <h1>Custom CSS with Bootstrap via npm</h1>
+        <p>This demonstrates building a custom CSS file with Bootstrap's source Sass files, managed via npm. While not a complete solution, this demo highlights how to change default variables, create a custom stylesheet, and choose specific parts of CSS to include.</p>
+        <p class="text-white-50">Note: This demo doesn't include compiling Bootstrap's JavaScript.</p>
+      </div>
+    </div>
+
+    <div class="p-3 p-md-5 border-top border-white">
+      <div class="col-md-7 mx-auto">
+        <h2>Included files</h2>
+        <p>In addition to our <code>package.json</code>, this demo includes two key files:</p>
+        <ul>
+          <li><code>index.html</code> &mdash; the page you're looking at</li>
+          <li><code>custom.scss</code> &mdash; a new Sass stylesheet for modifying and compiling Bootstrap's CSS</li>
+        </ul>
+        <p>Bootstrap's source Sass code is spread across dozens of smaller <code>.scss</code> files. By default, we include every one of these files in what we call our "import stack," a series of <code>@import</code> statements. For demonstration purposes, the full Bootstrap import stack has been commented out in our <code>custom.scss</code> file, save for a handful of components:</p>
+        <ul>
+          <li><code>functions</code>, <code>variables</code>, and <code>mixins</code> &mdash; useful tools for interacting with and customizing Bootstrap's default styles.</li>
+          <li><code>reboot</code> &mdash; our opinionated browser normalization styles.</li>
+          <li><code>type</code> &mdash; our default typography styles.</li>
+          <li><code>code</code> &mdash; our inline and block code styles.</li>
+          <li><code>grid</code> &mdash; our layout and grid system styles.</li>
+          <li><code>utilities</code> &mdash; all our utility classes for rapid prototyping.</li>
+        </ul>
+
+        <h2>Compiling</h2>
+        <p>Built into npm is the ability to run scripts or tasks, like compiling CSS, via the command line. The `package.json` in any npm package typically includes scripts unique to that project. Here's how to use our this demo's npm scripts to compile a custom Bootstrap build.</p>
+
+        <ol>
+          <li>From the command line, navigate to this demo's root directory, <code>bootstrap-npm</code>.</li>
+          <li>When ready, enter <code>npm start</code> to compile the CSS and watch for changes.</li>
+          <li>Open the <code>custom/index.html</code> file in any browser to see a styled page using your freshly compiled, custom CSS.</li>
+        </ol>
+
+        <p>When using <code>npm start</code>, any changes you make to your <code>custom.scss</code> will automatically cause the Sass file to recompile. Refresh your HTML page to see those changes in action.</p>
+
+        <p>Those just getting started with Bootstrap and npm may wish to build on this project's <code>package.json</code> by adding new dependencies and scripts. Please do!</p>
+      </div>
+    </div>
   </body>
 </html>

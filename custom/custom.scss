@@ -4,16 +4,29 @@
  * Licensed MIT
  */
 
+// Functions, variables, and mixins must come first.
+//
+// - Variables and mixins are dependant on functions
+// - In order to override Sass's default variables, those default variables must
+//   come first
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
+
+// Override variable defaults
+//
+// Here is where we customize the variables from Bootstrap's `variables.scss`.
+// We copy-pasta variables we need from that source file, remove the `!default`
+// flag, and finally change their values.
+$body-bg: $gray-200;
+$code-color: $danger;
 
 // @import "node_modules/bootstrap/scss/root";
 @import "node_modules/bootstrap/scss/reboot";
 @import "node_modules/bootstrap/scss/type";
 // @import "node_modules/bootstrap/scss/images";
-// @import "node_modules/bootstrap/scss/code";
-// @import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
 // @import "node_modules/bootstrap/scss/tables";
 // @import "node_modules/bootstrap/scss/forms";
 // @import "node_modules/bootstrap/scss/buttons";
@@ -42,14 +55,14 @@
 // @import "node_modules/bootstrap/scss/print";
 
 html {
-  background-color: $gray-200;
+  // background-color: $gray-200;
 }
 
 @media (min-width: 768px) {
   body {
-    max-width: 48rem;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: transparent;
+    // max-width: 48rem;
+    // margin-right: auto;
+    // margin-left: auto;
+    // background-color: transparent;
   }
 }
