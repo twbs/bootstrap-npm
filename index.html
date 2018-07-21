@@ -11,15 +11,16 @@
       </div>
     </div>
 
-    <div class="p-3 p-md-5 border-top border-white">
+    <div class="p-3 p-md-5 border-top border-bottom border-white">
       <div class="col-md-7 mx-auto">
         <h2>Included files</h2>
-        <p>In addition to our <code>package.json</code>, this demo includes two key files:</p>
+        <p>In addition to our <code>package.json</code> and some support files, this demo includes two key files:</p>
         <ul>
           <li><code>index.html</code> &mdash; the page you're looking at</li>
-          <li><code>bootstrap-custom.scss</code> &mdash; a new Sass stylesheet for modifying and compiling Bootstrap's CSS</li>
+          <li><code>bootstrap-custom.scss</code> &mdash; a Sass stylesheet where we'll modify and compile our CSS</li>
         </ul>
-        <p>Bootstrap's source Sass code is spread across dozens of smaller <code>.scss</code> files. By default, we include every one of these files in what we call our "import stack," a series of <code>@import</code> statements. For demonstration purposes, the full Bootstrap import stack has been commented out in our <code>custom.scss</code> file, save for a handful of components:</p>
+        <p>Bootstrap's source Sass code is spread across dozens of smaller <code>.scss</code> files. By default, we include every one of these files in what we call our "import stack," a series of <code>@import</code> statements in the source <code>bootstrap.scss</code> files.</p>
+        <p>To demonstrate how to optionally include Bootstrap piece-by-piece, the full Bootstrap import stack has been commented out in our <code>custom.scss</code> file, save for a handful of components:</p>
         <ul>
           <li><code>functions</code>, <code>variables</code>, and <code>mixins</code> &mdash; useful tools for interacting with and customizing Bootstrap's default styles.</li>
           <li><code>reboot</code> &mdash; our opinionated browser normalization styles.</li>
@@ -28,18 +29,16 @@
           <li><code>grid</code> &mdash; our layout and grid system styles.</li>
           <li><code>utilities</code> &mdash; all our utility classes for rapid prototyping.</li>
         </ul>
+        <p>You may uncomment any of the additional imports, add new imports, or even write new styles.</p>
 
         <h2>Compiling</h2>
-        <p>Built into npm is the ability to run scripts or tasks, like compiling CSS, via the command line. The `package.json` in any npm package typically includes scripts unique to that project. Here's how to use our this demo's npm scripts to compile a custom Bootstrap build.</p>
-
+        <p>Built into npm is the ability to run scripts or tasks, like compiling CSS, via the command line. The <code>package.json</code> in any npm package typically includes scripts unique to that project. Here's how to use our this demo's npm scripts to compile a custom Bootstrap build.</p>
         <ol>
           <li>From the command line, navigate to this demo's root directory, <code>bootstrap-npm</code>.</li>
-          <li>When ready, enter <code>npm start</code> to compile the CSS and watch for changes.</li>
-          <li>Open the <code>custom/index.html</code> file in any browser to see a styled page using your freshly compiled, custom CSS.</li>
+          <li>When ready, enter <code>npm start</code>. This will compile the CSS for the first time, and then watch the source <code>bootstrap-custom.scss</code> file for changes, automatically recompiling as necessary.</li>
+          <li>Open the <code>index.html</code> file in any browser to see a styled page using your freshly compiled CSS.</li>
         </ol>
-
         <p>When using <code>npm start</code>, any changes you make to your <code>custom.scss</code> will automatically cause the Sass file to recompile. Refresh your HTML page to see those changes in action.</p>
-
         <p>Those just getting started with Bootstrap and npm may wish to build on this project's <code>package.json</code> by adding new dependencies and scripts. Please do!</p>
       </div>
     </div>
