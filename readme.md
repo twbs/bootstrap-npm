@@ -12,3 +12,5 @@ With Node.js installed, download or clone this project. Then, from the directory
 npm install
 npm start
 ```
+
+This will compile the provided Sass file, `bootstrap-custom.scss`, into a new CSS file and open the included HTML page, `index.html`, in your browser.
