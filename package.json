@@ -5,8 +5,9 @@
   "style": "bootstrap-custom.css",
   "sass": "bootstrap-custom.scss",
   "scripts": {
-    "start": "npm run sass -- -w",
-    "sass": "node-sass --output-style compressed bootstrap-custom.scss bootstrap-custom.css"
+    "start": "npm run sass",
+    "sass": "node-sass --output-style compressed bootstrap-custom.scss bootstrap-custom.css",
+    "watch": "npm run sass -- -w"
   },
   "author": "mdo",
   "license": "MIT",
