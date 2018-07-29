@@ -36,9 +36,10 @@
         <p>Built into npm is the ability to run scripts or tasks, like compiling CSS, via the command line. The <code>package.json</code> in any npm package typically includes scripts unique to that project. Here's how to use our this demo's npm scripts to compile a custom Bootstrap build.</p>
         <ol>
           <li>From the command line, navigate to this demo's root directory, <code>bootstrap-npm</code>.</li>
-          <li>When ready, enter <code>npm start</code>. This will compile the CSS for the first time, and then watch the source <code>bootstrap-custom.scss</code> file for changes, automatically recompiling as necessary.</li>
+          <li>When ready, enter <code>npm start</code>. This will compile the CSS for the first time.</li>
           <li>Open the <code>index.html</code> file in any browser to see a styled page using your freshly compiled CSS.</li>
         </ol>
+        <p>To watch the source <code>bootstrap-custom.scss</code> file for changes, enter <code>npm run watch</code> to automatically recompile as necessary.</p>
         <p>When using <code>npm start</code>, any changes you make to your <code>custom.scss</code> will automatically cause the Sass file to recompile. Refresh your HTML page to see those changes in action.</p>
         <p>Those just getting started with Bootstrap and npm may wish to build on this project's <code>package.json</code> by adding new dependencies and scripts. Please do!</p>
       </div>

@@ -13,4 +13,4 @@ npm install
 npm start
 ```
 
-This will compile the provided Sass file, `bootstrap-custom.scss`, into a new CSS file and open the included HTML page, `index.html`, in your browser.
+This will compile the provided Sass file, `bootstrap-custom.scss`, into a new CSS file. Open the included HTML page, `index.html`, in your browser to view the demo.
